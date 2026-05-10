@@ -1,0 +1,48 @@
+{
+  "name": "koishi-plugin-aktmp",
+  "description": "欧洲卡车模拟2查询欧卡TruckersMP查询插件工具,作者:阿K*QQ737107334",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "homepage": "https://github.com/737107334/koishi-plugin-aktmp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/737107334/koishi-plugin-aktmp"
+  },
+  "bugs": {
+    "url": "https://github.com/737107334/koishi-plugin-aktmp/issues"
+  },
+  "author": {
+    "name": "阿K",
+    "url": "https://space.bilibili.com/606891061"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {},
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "plugin",
+    "truckersmp",
+    "gametool",
+    "ets2",
+    "tmp"
+  ],
+  "koishi": {
+    "service": {
+      "required": [
+        "database"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "koishi": "^4.18.7"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "js-md5": "^0.8.3"
+  }
+}
