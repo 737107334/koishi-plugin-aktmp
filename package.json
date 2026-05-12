@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-aktmp",
-  "description": "欧洲卡车模拟2查询欧卡TruckersMP查询插件工具,作者:阿K*QQ737107334",
-  "version": "1.0.0",
+  "description": "阿K自用版欧卡TruckersMP查询姬,作者:QQ737107334",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "homepage": "https://github.com/737107334/koishi-plugin-aktmp",
@@ -17,8 +17,7 @@
     "url": "https://space.bilibili.com/606891061"
   },
   "files": [
-    "lib",
-    "dist"
+    "lib"
   ],
   "license": "MIT",
   "scripts": {},
