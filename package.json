@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-aktmp",
   "description": "阿K自用版欧卡TruckersMP查询姬,作者:QQ737107334",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "homepage": "https://github.com/737107334/koishi-plugin-aktmp",
@@ -20,7 +20,6 @@
     "lib"
   ],
   "license": "MIT",
-  "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",
