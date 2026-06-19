@@ -12,6 +12,13 @@
 
 ---
 
+## 📢 作者信息
+
+- 💬 **作者机器人交流群**：[978796651](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ODOVV6E4qjAWTt6W30qdVp6QvjCCIm3e&authKey=us4Xk6VozVtMKrxjCZSBvng6la18GKfUbw2fesVEh8pVSrF0UOAlbyZ5coUg0CxZ&noverify=0&group_code=978796651)
+- 🐧 **作者企鹅**：[737107334](tencent://message/?uin=737107334)
+
+---
+
 ## 功能特性
 
 - 🔍 **玩家查询** — 快速查询 TruckersMP 玩家信息
@@ -25,11 +32,6 @@
 ---
 
 ### 更新日志
-
-**v1.0.2**
-- ✅ 修复 Trucky API 接口调用问题（添加 User-Agent 请求头）
-- ✅ 优化在线城市显示格式（与路况显示保持一致）
-- ✅ 修复多项已知问题
 
 **v1.0.1**
 - ✅ 新增服务器分割线显示
@@ -92,10 +94,9 @@ yarn add koishi-plugin-aktmp
 
 ---
 
-## 交流群
+## 💬 交流群 & 联系作者
 
-📢 QQ 交流群：**978796651**
+- 📢 **QQ 交流群**：[978796651](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ODOVV6E4qjAWTt6W30qdVp6QvjCCIm3e&authKey=us4Xk6VozVtMKrxjCZSBvng6la18GKfUbw2fesVEh8pVSrF0UOAlbyZ5coUg0CxZ&noverify=0&group_code=978796651)
+- 🐧 **作者 QQ**：[737107334](tencent://message/?uin=737107334)
 
-## 联系作者
-
-QQ：737107334
+欢迎加入交流群反馈问题、提出建议或分享使用体验！🎉
