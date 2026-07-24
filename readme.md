@@ -35,23 +35,19 @@
 
 | 数据项 | 数据来源 | 说明 |
 |--------|----------|------|
-| TMP 编号 / 玩家名称 / SteamID | TruckersMP 官方 API | 官方全字段覆盖 |
-| 注册日期 / 注册天数 / 所属分组 | TruckersMP 官方 API | 官方全字段覆盖 |
-| 当前车队 / 车队职位 | TruckersMP 官方 API | 通过 VTC 成员接口获取 |
-| 封禁状态 / 封禁次数 / 封禁原因 | TruckersMP 官方 API | 通过 bans 接口获取 |
-| 是否赞助商 | TruckersMP 官方 API | 通过 patreon 字段获取 |
-| 今日里程 / 历史里程 | **EVM 接口** | 官方接口不提供，仅依赖 EVM 独有数据 |
-| 上次在线时间 | **EVM 接口** | 官方接口不提供，仅依赖 EVM 独有数据 |
-| 在线状态 / 在线位置（服务器·国家·城市） | Trucky 接口 | TMP 官方无「玩家是否在线」查询，由 Trucky 实时获取 |
-
-> 💡 即：**TruckersMP 官方能提供的字段全部走官方接口；只有官方没有的里程/上次在线才依赖 EVM**，其余信息与在线状态互不混用。
+| TMP 编号 / 玩家名称 / SteamID | TruckersMP 官方 API |
+| 注册日期 / 注册天数 / 所属分组 | TruckersMP 官方 API |
+| 当前车队 / 车队职位 | TruckersMP 官方 API |
+| 封禁状态 / 封禁次数 / 封禁原因 | TruckersMP 官方 API |
+| 是否赞助商 | TruckersMP 官方 API |
+| 今日里程 / 历史里程 | **EVM 接口** |
+| 上次在线时间 | **EVM 接口** |
+| 在线状态 / 坐标 | **EDA 接口（主）** + Trucky（备） |
+| 在线城市 / 国家 | 内置 ETS2 城市坐标库反查 |
 
 ---
 
 ### 更新日志
-
-**v1.0.3**
-- ✅ 明确数据源架构：TMP 官方接口覆盖全部官方字段，仅 EVM 提供里程/上次在线等独有数据
 
 **v1.0.2**
 - ✅ 地图 DLC 价格改为实时联网获取（Steam 国区），每 2 小时自动刷新
@@ -67,12 +63,17 @@
 
 ## 支持的游戏服务器
 
+更新服务器显示主图风格。
+
 | 服务器 | 简称 |
 |--------|------|
-| Simulation 1 | `s1` / `s1服` |
-| Simulation 2 | `s2` / `s2服` |
-| ProMods | `p` / `p服` |
-| Arcade | `a` / `a服` |
+| Simulation 1 | S1 服 |
+| Simulation 2 | S2 服 |
+| [US] Simulation | 美 服 |
+| [Asia] Simulation | 亚 服 |
+| Arcade | A 服 |
+| ProMods | P 服 |
+| ProMods Arcade | P 服(街机) |
 
 ---
 
@@ -92,8 +93,6 @@
 | `今日里程排行` | 今日里程排名 | `今日里程排行` |
 | `足迹` | ETS2 玩家足迹 | `足迹 123` |
 | `足迹p` | ProMods 玩家足迹 | `足迹p 123` |
-
-> 💡 绑定 TMP ID 后，使用其他指令时可省略输入 ID
 
 ---
 
