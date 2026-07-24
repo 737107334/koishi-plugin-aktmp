@@ -94,6 +94,31 @@
       text-overflow: ellipsis;
       max-width: 200px;
     }
+    .server-name-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-width: 0;
+    }
+    .server-alias-line {
+      display: inline-block;
+      color: #00ffea;
+      background: rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(139, 175, 255, 0.25);
+      border-radius: 4px;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 2px 8px;
+      margin-top: 6px;
+    }
+    .queue-line {
+      display: inline-block;
+      color: #f0883e;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 2px 8px;
+      margin-top: 6px;
+    }
     .player-count {
       color: #6e7a8a;
       font-size: 11px;
@@ -255,9 +280,9 @@ function createServerCard(server) {
   }
 
   // 队列
-  let queueText = '';
+  let queueLine = '';
   if (server.queueCount > 0) {
-    queueText = `<span class="queue-badge">队列 ${server.queueCount}</span>`;
+    queueLine = '<div class="queue-line">排队人数：' + server.queueCount + '</div>';
   }
 
   card.innerHTML = `
@@ -265,11 +290,15 @@ function createServerCard(server) {
       <div class="server-row">
         <div class="server-left">
           <span class="status-indicator ${server.isOnline === 1 ? 'online' : 'offline'}"></span>
-          <span class="server-name">${server.serverName}</span>
+          <div class="server-name-wrap">
+            <span class="server-name">${server.serverName}</span>
+          </div>
         </div>
-        <span class="player-count"><span class="num">${server.playerCount}</span> / ${server.maxPlayer}${queueText}</span>
+        <span class="player-count"><span class="num">${server.playerCount}</span> / ${server.maxPlayer}</span>
       </div>
       ${featuresHTML ? '<div class="features">' + featuresHTML + '</div>' : ''}
+      ${server.serverAlias ? '<div class="server-alias-line">服务器简称：' + server.serverAlias + '</div>' : ''}
+      ${queueLine}
     </div>
     <div class="chart-area">
       ${server.isOnline === 1 && server.playerHistory && server.playerHistory.length > 0
