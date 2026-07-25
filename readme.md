@@ -40,6 +40,8 @@
 | 当前车队 / 车队职位 | TruckersMP 官方 API | 通过 VTC 成员接口获取 |
 | 封禁状态 / 封禁次数 / 封禁原因 | TruckersMP 官方 API | 通过 bans 接口获取 |
 | 是否赞助商 | TruckersMP 官方 API | 通过 patreon 字段获取 |
+| 当前赞助金额 | TruckersMP 官方 API | 来自 patreon.currentPledge，分转元展示 |
+| 累计赞助金额 | TruckersMP 官方 API | 来自 patreon.lifetimePledge（非 EVM 独有，官方 API 已提供） |
 | 今日里程 / 历史里程 | **EVM 接口** | 官方不提供，仅依赖 EVM |
 | 上次在线时间 | **EVM 接口** | 官方不提供，仅依赖 EVM |
 | 在线状态 / 坐标 | **EDA 接口（主）** + Trucky（备） | EDA 为主，Trucky 回退兜底 |
@@ -72,6 +74,9 @@
 ---
 
 ## 更新日志
+
+**v1.0.4**
+- ✅ 玩家查询新增「累计赞助」展示，数据来自官方 API 的 patreon.lifetimePledge
 
 **v1.0.3**
 - ✅ 在线状态主源切换为 EDA，Trucky 作备选回退
